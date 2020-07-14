@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcb HTML</title>
+</head>
+
+<body>
+
+    <p>JavaScript能够直接写入HTML输出流中</p>
+
+    <script>
+        document.write("<h2>这是一个标题</h2>")
+        document.write("<p>这是一个段落</p>")
+    </script>
+
+    <p>
+        你只能在HTML输出流中使用<strong>document.write</strong>
+        如果在文档已加载完成后使用它(比如在函数中),会覆盖整个文档。
+    </p>
+
+</body>
+
+</html>

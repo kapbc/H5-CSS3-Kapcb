@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcb HTML</title>
+</head>
+
+<body>
+
+    <canvas id="demo" width="200px" height="150px" style="border: 1px solid blue;">
+        您的浏览器不支持HTML 5 canvas标签
+    </canvas>
+
+</body>
+<script>
+    var a = document.getElementById("demo");
+    var ctx = a.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 150);
+    ctx.stroke();
+</script>
+
+</html>
