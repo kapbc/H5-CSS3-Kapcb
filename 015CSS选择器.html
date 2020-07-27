@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器</title>
+    <style>
+        /* 将所有的段落设置为红色 */
+        /* 
+                元素选择器
+                    作用：根据标签名选中指定的元素
+                    语法：标签名{}
+                    例子：p{}; div{};
+             */
+        p {
+            color: red;
+        }
+
+        /* 
+            id选择器
+                作用：根据元素的id属性值选中一个元素
+                语法：#id属性值{}
+                例子：#demo{}; #red{}
+         */
+        p#demo {
+            color: sienna;
+        }
+
+        /* 
+            类选择器
+                作用：根据元素的class属性值选中一组元素
+                语法：class.{}
+                
+                class是一个标签的属性，它和id类似，不同的是class可以重复使用
+                可以通过class属性来为元素分组
+                可以同时为一个标签指定多个class
+         */
+        p.demo {
+            color: skyblue;
+        }
+
+        h1 {
+            color: seagreen;
+        }
+
+        /* 
+            通配选择器
+                作用：选中页面中的所有元素
+                语法：*{}
+         */
+
+        * {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>我是王大锤</h1>
+    <p id="demo">少小离家老大回</p>
+    <p class="demo">乡音无改鬓毛衰</p>
+    <p>儿童相见不相识</p>
+    <p class="demo">笑问客从何处来</p>
+
+    <p>秋水共长天一色</p>
+    <p>落霞与孤鹜齐飞</p>
+</body>
+
+</html>

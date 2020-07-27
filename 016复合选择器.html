@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>符合选择器</title>
+    <style>
+        /* 
+            将class为demo的元素设置为红色（字体颜色）
+            
+         */
+        .demo {
+            color: slateblue;
+        }
+
+        /* 
+            将class为demo的div字体大小设置为30px
+          */
+
+        /* 
+            交集选择器
+                作用：同时选中符合多个条件的元素
+                语法：选择器1选择2选择器3选择器n{}
+                注意点：交集选择器中如果有元素选择器，必须使用元素选择器开头
+         */
+        div.demo {
+            font-size: 30px;
+        }
+
+        .a.b.c {
+            color: red;
+        }
+
+        /* 
+            选择器分组（并集选择器）
+                作用：同时选择多个选择器对应的元素
+                语法：选择器1，选择器2，选择器3，选择器n{}
+         */
+        h1,
+        span {
+            color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="demo">我是div</div>
+
+    <p class="demo">我是p标签</p>
+
+    <p class="a b c">我也是p标签</p>
+
+    <h1>标题</h1>
+
+    <span>哈哈</span>
+</body>
+
+</html>
