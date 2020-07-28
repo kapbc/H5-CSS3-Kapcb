@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为元素选择器</title>
+    <style>
+        /* 
+        为元素表示页面中一些特殊的并不真实存在的元素（特殊的位置）
+            伪元素使用::开头
+
+            ::first-letter 表示第一个字母
+            ::first-line 表示第一行
+            ::selection 表示选中的内容
+            ::before 元素的起始位置
+            ::after 元素的最后
+                ::before、::after必须结合content属性来使用
+         */
+
+        p::first-letter {
+            font-size: 40px;
+        }
+
+        p::first-line {
+            background-color: yellowgreen;
+        }
+
+        p::selection {
+            background-color: orangered;
+        }
+
+        div::before {
+            content: 'abc ';
+            color: red;
+        }
+
+        div::after {
+            content: ' 奥里给';
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>How are you!</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci est facere commodi mollitia natus quis
+        tempora, tenetur sint voluptas nisi ipsa excepturi vero laudantium eius facilis aliquid ad ipsam.
+    </p>
+
+</body>
+
+</html>

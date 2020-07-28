@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接的伪类</title>
+    <style>
+        /* 
+        :link 用来表示没访问过的链接（正常的连接）
+
+     */
+
+        a:link {
+            color: red;
+            font-size: 10px;
+        }
+
+        /* 
+        :visited 用来表示访问过的连接
+
+        由于隐私的原因，所以:visited这个伪类只能修改连接的颜色
+     */
+        a:visited {
+            color: seagreen;
+        }
+
+        /* 
+        :hover 用来表示鼠标移入的状态
+     */
+
+        a:hover {
+            color: sienna;
+            font-size: 30px;
+        }
+
+        /* 
+        :active 用来表示鼠标点击状态
+     */
+
+        a:active {
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.ccaizx.cn" target="_blank">访问过的连接</a>
+
+    <br /><br /><br />
+    <a href="https://www.ccaizx.cn" target="_blank">没饭问过的连接</a>
+</body>
+
+</html>
