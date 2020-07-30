@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>像素和百分比</title>
+    <style>
+        /* 
+        
+        长度单位：
+            像素
+                屏幕（显示器）实际上是由一个个小点点构成的
+                不同屏幕的像素大小是不同的，像素越小的屏幕现实的效果越清晰
+                所以同样的200px在不同的设备下显示效果不一样
+
+            百分比
+                也可以将属性值设为相对其父元素属性的百分比
+                设置百分比可以使子元素跟随父元素的改变而改变
+
+            em
+                em是相对于自身元素的字体大小来计算的
+                1 em = 1 font-size （font-size默认16像素）
+                em会根据字体大小的改变而改变
+
+            rem
+                rem是相对于根元素的字体大小来计算的
+
+         */
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+        }
+
+        .box2 {
+            width: 50%;
+            height: 50%;
+            margin-left: 25%;
+            background-color: green;
+        }
+
+        .box3{
+            margin-top: 10px;
+            width: 10em;
+            height: 10em;
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <div class="box3"></div>
+
+</body>
+
+</html>
