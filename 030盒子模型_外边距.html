@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        /* 
+        外边距（margin）
+            - 外边距不会影响盒子可见框的大小
+            - 但是外边距会影响盒子模型的位置
+            一共有四个方向的外边距
+                margin-top
+                    - 上边距，设置正值，元素会向下移动
+                margin-right
+                    - 默认情况下设置margin-right不会产生任何效果
+                margin-bottom
+                    - 下外边距，设置一个正值，其下边的元素会向下移动
+                margin-left
+                    - 做外边距，设置一个正值，元素回往右移动
+
+                margin也可以设置负值，如果是负值则会向相反方向移动
+
+                margin的简写属性
+                    margin 可以同时设置四个方向的外边距，用法和padding一样
+
+            - 元素在页面中是按照自左向右的顺序排列的
+            元素会尽量的往左上角靠，所以默认情况下如果设置的是左和上外边距则会
+            移动元素自身，而设置下和右外边距会移动其他元素
+                
+        */
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            border: 10px orange solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水平布局</title>
+    <style>
+        /* 
+            元素的水平方向布局：
+                - 元素在其父元素中水平方向的位置由以下几个属性共同决定
+                - 由左至右：
+                    - margin-left
+                    - border-left
+                    - padding-left
+                    - width
+                    - padding-right
+                    - border-right
+                    - margin-right
+
+                - 一个元素在其父元素中，水平布局必须要满足以下的等式
+    margin-left + border-left + padding-left + width + padding-right + border-right + margin-right = 父元素内容区的宽度（必须满足）
+        
+        0 + 0 + 0 + 200 + 0 + 0 + 0 = 800
+        0 + 0 + 0 + 200 + 0 + 0 + 600 = 800
+            - 以上等式必须满足，如果相加结果使等式不成立，则称其为过度约束，则等式会自动调整
+            - 调整情况：
+                - 如果以上7个值没有为 auto 的情况，则浏览器会自动调整margin-right的值使等式成立
+            - 7个值中有3个值可以设置为auto
+                - width
+                - margin-left
+                - margin-right
+
+                - 如果设置某个值为auto，浏览器会自动调整设置为auto的值使得等式成立
+                0 + 0 + 0 + auto + 0 + 0 + 0 = 800      auto=800
+
+                - width的值默认为auto
+
+                - 如果将一个宽度和一个外边距设置为auto，则宽度会调整到最大，设置为auto的外边距会调整为0
+                - 如果将三个值都设置为auto，则外边距都是0，宽度最大
+                - 如果将两个外边距都设置为auto，宽度固定，则会将外边距设置为相同的值
+                所以经常利用这个特点来使一个元素在其父元素中水平居中
+                示例：
+                    width：xxxpx;
+                    margin: 0 auto;
+        */
+        .outer {
+            width: 800px;
+            height: 200px;
+            border: 10px solid orange;
+        }
+
+        .inner {
+            width: auto;
+            height: 200px;
+            background-color: #bfa;
+            /* margin-left: 100px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+</body>
+
+</html>
