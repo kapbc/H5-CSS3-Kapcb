@@ -5,13 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>布局练习</title>
+    <link rel="stylesheet" href="css/reset.css">
     <style>
+        /* 设置背景的颜色 */
+        body {
+            background-color: antiquewhite;
+        }
 
+        /* 设置外部ul的样式 */
+        .list-img {
+            /* 设置ul的宽度 */
+            width: 190px;
+            /* 设置ul的高度 */
+            height: 470px;
+            /* 裁剪溢出的内容 */
+            overflow: hidden;
+            /* 使ul在页面中剧中（实际实例中不需要这么些） */
+            margin: 50px auto;
+        }
+
+        /* 设置li的位置 */
+        .list-img li {
+            margin-bottom: 9px;
+        }
+
+        /* 设置图片的大小 */
+        .list-img img {
+            width: 190px;
+        }
     </style>
 </head>
 
 <body>
-
+    <ul class="list-img">
+        <li><a href="javascript:;"><img src="img/007.jpg.webp" alt=""></a></li>
+        <li><a href="javascript:;"><img src="img/008.jpg.webp" alt=""></a></li>
+        <li><a href="javascript:;"><img src="img/009.jpg.webp" alt=""></a></li>
+    </ul>
 </body>
 
 </html>

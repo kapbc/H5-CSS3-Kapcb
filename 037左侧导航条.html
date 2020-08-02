@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东左侧导航条</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <style>
+        /* 设置body背景颜色 */
+        body {
+            background-color: #bfa;
+        }
+
+        /* 设置菜单外部容器 */
+        .left-nav {
+            /* 设置宽度 */
+            width: 190px;
+            /* 设置高度 */
+            height: 470px;
+            /* 设置边框，便于查看调整 */
+            border: 1px orange solid;
+            background-color: #fff;
+            margin: 50px auto;
+            /* 设置容器上内边距 */
+            padding-top: 10px;
+
+        }
+
+
+        /* 设置菜单内部的item */
+        .left-nav .item {
+            width: 172.005px;
+            height: 25px;
+            /* 要让一个文字在父元素中垂直居中，只需要
+                将父元素的line-height设置为一个和父
+                元素height一样的值即可
+            */
+            line-height: 25px;
+            /* 设置div左内边距 */
+            padding-left: 18px;
+
+        }
+
+        .item a {
+            /* 设置字体大小 */
+            font-size: 14px;
+            /* 设置字体颜色 */
+            color: #636363;
+            /* 去除下划线 */
+            text-decoration: none;
+            transition-property: color;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+
+        /* 为item设置鼠标移入的状态 */
+        .item:hover {
+            background-color: #d9d9d9;
+        }
+
+        /* 设置超链接的hover */
+        .item a:hover {
+            color: #c81623;
+        }
+
+        .item span {
+            padding: 0px 2px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 创建一个外部容器 nav(div) div(div) ul(li) -->
+    <nav class="left-nav">
+        <div class="item">
+            <a href="javascript:;">Kapcb</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">家居
+                <span class="menu-line">/</span></a>
+            <a href="javascript:;">家居
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">家装</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">男装
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">女装
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">童装</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">美妆
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">清洁
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">宠物</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">女鞋
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">箱包
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">钟表</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">房产
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">汽车
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">汽车用品</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">食品
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">酒类
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">生鲜</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">图书
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">文娱
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">教育</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">机票
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">酒店
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">旅游</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">理财
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">白条
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">保险</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">医药保健
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">计生情趣</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">理财
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">白条
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">保险</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">艺术
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">鲜花
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">绿植</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">男鞋
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">运动
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">户外</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">安装
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">维修
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">二手</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">电脑
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">办公
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">电竞</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">母婴
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">玩具</a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">钟表
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">珠宝
+                <span class="menu-line">/</span>
+            </a>
+            <a href="javascript:;">Kapcb</a>
+        </div>
+    </nav>
+
+</body>
+
+</html>
