@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动的简介</title>
+    <style>
+        /* 
+            通过浮动可以使一个元素向其父元素的左侧或者右侧移动
+                使用 float 属性来设置元素的浮动
+                可选值:
+                    none 默认值，元素不浮动
+                    left 元素向左浮动
+                    right 元素向右浮动
+
+                注意：元素设置浮动之后，水平布局的等式便不需要强制成立
+                    元素设置浮动之后，会完全从文档流中脱离，不在占用文
+                    档流的位置，所以元素下班的还在文档流中的元素会自动
+                    向上移动
+
+                浮动的特点：
+                    1、浮动元素会完全脱离文档流，不在占用文档流中的位置
+                    2、设置浮动之后，元素会向父元素的左侧或右侧移动，
+                    3、浮动元素默认不会从父元素中移出
+                    4、浮动元素向左或向右移动时，不会超过它前边的其它浮动元素（不会覆盖）
+                    5、如果浮动元素的上边是一个没有浮动的块元素，则浮动元素无法上移
+                    6、浮动元素不会超过它上边浮动的兄弟元素，最多就是和它一样高
+
+                简单总结:
+                    浮动目前来讲它主要的作用就是让页面中的元素可以水平排列
+                        通过浮动可以制作一些水平方向的布局
+
+        */
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            float: left;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+</body>
+
+</html>

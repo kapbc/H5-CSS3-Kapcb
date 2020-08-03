@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>网易新闻右侧列表</title>
+    <style>
+        body {
+            background-color: #bfa;
+        }
+
+        /* 设置容器 */
+        .news-wrapper {
+            /* 容器宽度 */
+            width: 300px;
+            /* 容器高度 */
+            height: 359px;
+            /* 外边距 */
+            margin: 50px auto;
+            background-color: orange;
+            border-top: 1px solid #ddd;
+        }
+
+        /* 设置标题 */
+        .news-title {
+            /* 为了边框和文字宽度一致，需要将h2转换为行内块元素 */
+            display: inline-block;
+            /* 设置高度 */
+            height: 40px;
+            /* 设置上边框 */
+            border-top: 1px solid #ddd;
+            /* 通过margin将h2上移，盖住上边框 */
+            margin-top: -1px;
+        }
+
+        /* 设置a标签 */
+        .news-title a {
+            /* 设置a标签字体 */
+            color: black;
+            /* 去除超链接下划线 */
+            text-decoration: none;
+        }
+
+        /* 设置a标签 */
+        .news-wrapper .news a {
+            /* 设置a标签字体 */
+            color: #40406B;
+            /* 去除超链接下划线 */
+            text-decoration: none;
+        }
+
+        /* 设置标题 */
+        .news-wrapper .news a h2 {
+            /* 设置标题颜色 */
+            color: red;
+            /* 设置字体加粗 */
+            font-weight: bold;
+            /* 上外边距 */
+            margin-top: -30px;
+            /* 左外边距 */
+            margin-left: 20px;
+            /* 下外边距 */
+            margin-bottom: 15px;
+        }
+
+        /* 设置图片 */
+        .news-wrapper .news a img {
+            /* 图片宽度 */
+            width: 100%;
+            /* 图片高度 */
+            height: 200px;
+        }
+
+        /* 设置ul */
+        .news-wrapper .news-list {
+            margin-top: 20px;
+            padding-left: 14px;
+            /* 设置项目符号 */
+            /* list-style: square; */
+
+        }
+
+        /* 设置li */
+        .news-wrapper .news-list li {
+            margin-bottom: 17px;
+        }
+
+        /* 设置li中的a标签 */
+        .news-wrapper .news-list li a {
+            /* 设置文字颜色 */
+            color: black;
+            /* 去除下划线 */
+            text-decoration: none;
+            /* 设置文字的加粗 */
+            font-weight: bold;
+            /* 设置上外边距 */
+            margin-top: 10px;
+        }
+
+        /* 设置a标签鼠标移动样式 */
+        .news-wrapper .news-list li a:hover {
+            color: red;
+        }
+
+        /* 通过伪元素为每一个li添加项目符号 */
+        .news-wrapper .news-list li::before {
+            content: '■';
+            color: #bfa;
+            padding-right: 2px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建新闻列表的外部容器 -->
+    <div class="news-wrapper">
+        <h2 class="news-title">
+            <a href="javascript:;">体育</a>
+        </h2>
+        <!-- 创建图片容器 -->
+        <div class="news">
+            <a href="javascript:;">
+                <img src="/img/011.jpg.webp" alt="">
+                <!-- 创建图片标题 -->
+                <h2>格力，掌握核心科技</h2>
+            </a>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li><a href="javascript:;">大家好我是杜兰特</a></li>
+            <li><a href="javascript:;">我喜欢打家乡篮球</a></li>
+            <li><a href="javascript:;">我将把天赋带到金州打兄弟篮球</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
