@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航条</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <style>
+        /* 设置nav大小 */
+        .nav {
+            width: 1210px;
+            height: 48px;
+            background-color: #e8e7e3;
+
+            margin: 100px auto;
+        }
+
+        .nav li {
+            /* 设置li向左浮动，以使菜单横向排列 */
+            float: left;
+            /* 设置li的高度 */
+            /* height: 48px; */
+            /* 将文字在父元素中垂直居中 */
+            line-height: 48px;
+        }
+
+
+        /* 设置a标签样式 */
+        .nav li a {
+            /* 将a元素转换为块元素 */
+            display: block;
+            /* 去除下划线 */
+            text-decoration: none;
+            /* 设置字体颜色 */
+            color: #777;
+            /* 修改字体大小 */
+            font-size: 18px;
+            /*  */
+            padding: 0 39px;
+        }
+
+        /* 设置鼠标移入效果 */
+        .nav li a:hover {
+            background-color: #3f3f3f;
+            color: #e8e7e3;
+        }
+
+        .nav li:last-child a {
+            padding: 0 42px 0 41px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建导航条的结构 -->
+    <ul class="nav">
+        <li><a href="javascript:;">HTML/CSS</a></li>
+        <li><a href="avascript:;">Browser Side</a></li>
+        <li><a href="avascript:;">Server Side</a></li>
+        <li><a href="avascript:;">Programming</a></li>
+        <li><a href="avascript:;">XML</a></li>
+        <li><a href="avascript:;">Web Building</a></li>
+        <li><a href="avascript:;">Reference</a></li>
+    </ul>
+
+</body>
+
+</html>
