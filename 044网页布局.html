@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页布局</title>
+    <style>
+        /* 公共样式抽取 */
+        header,
+        main,
+        footer {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 设置头部样式 */
+        header {
+            height: 120px;
+            background-color: silver;
+        }
+
+        /* 设置主体 */
+        main {
+            height: 350px;
+            background-color: white;
+            margin: 10px auto;
+        }
+
+        /* 公共样式抽取 */
+        nav,
+        article,
+        aside {
+            height: 100%;
+            float: left;
+        }
+
+        /* 设置左侧导航 */
+        nav {
+            width: 190px;
+            background-color: slategrey;
+        }
+
+        /* 设置中间内容 */
+        article {
+            width: 600px;
+            margin: 0 10px;
+            background-color: orange;
+        }
+
+        /* 设置右侧内容 */
+        aside {
+            width: 190px;
+            background-color: orchid;
+        }
+
+        /* 设置底部 */
+        footer {
+            height: 150px;
+            background-color: #bfa;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建头部 -->
+    <header></header>
+
+    <!-- 创建网页主体 -->
+    <main>
+        <!-- 左侧导航 -->
+        <nav></nav>
+        <!-- 中间内容 -->
+        <article></article>
+        <!-- 侧边栏 -->
+        <aside></aside>
+    </main>
+
+    <!-- 创建网页的 -->
+    <footer></footer>
+</body>
+
+</html>
