@@ -70,7 +70,7 @@
 <table>
     	<tr>
         <td>语义化标签</td>
-        <td>001-006</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">001-006</a></td>
     </tr>
     <tr>
         <td>列表</td>
