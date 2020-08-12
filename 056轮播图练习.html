@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图练习</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        /* 设置图片的容器 */
+        .img-wrapper {
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            /* 
+                为 ul 块元素开启相对定位，目的是使ul中的pointer
+                可以相对于 ul 定位，而不是相对于初始包含块(html)
+                进行定位，且开启相对低位时ul元素不会脱离文档流，不会
+                影响其他元素
+            */
+            position: relative;
+        }
+
+        /* 设置图片的宽高 */
+        img {
+            width: 590px;
+            height: 470px;
+        }
+
+        /* 设置li，让其脱离文档流，叠加在一起 */
+        li {
+            position: absolute;
+        }
+
+        /* 通过修改元素的层级，来显示指定的图片 */
+        .img-wrapper li:nth-child(4) {
+            z-index: 1;
+        }
+
+        /* 设置导航点的样式 */
+        .pointer {
+            position: absolute;
+            z-index: 9999;
+            left: 30px;
+            bottom: 20px;
+        }
+
+        /* 设置导a标签的样式 */
+        .img-wrapper .pointer a {
+            /* 设置元素向左浮动 */
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 4px;
+            background-color: rgba(255, 255, 255, .7);
+            /* 将背景颜色值设置到内容区，边框和内边距不再有背景颜色 */
+            background-clip: content-box;
+            border: 2px solid transparent;
+        }
+        
+        .pointer a:hover,
+        .pointer a.active {
+            background-color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="img-wrapper">
+        <li><a href="javascript:;"><img src="./img/012.jpg.webp"></a></li>
+        <li><a href="javascript:;"><img src="./img/013.jpg.webp"></a></li>
+        <li><a href="javascript:;"><img src="./img/014.jpg.webp"></a></li>
+        <li><a href="javascript:;"><img src="./img/015.jpg.webp"></a></li>
+
+        <div class="pointer">
+            <a class="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </ul>
+
+</body>
+
+</html>
