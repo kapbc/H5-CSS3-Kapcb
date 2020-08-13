@@ -19,7 +19,15 @@
                         ...
                             指定字体类别，浏览器会自动使用改类别下的字体
                         
+            @font-face 可以将服务器中的字体直接提供给用户去使用
+                两个问题：
+                    1、加载速度
+                    2、版权问题
 
+            @font-face {
+            font-family: ; 指定字体的名字
+            src: url(); 服务器中字体的路径
+        }
 
         */
         p{
@@ -27,6 +35,7 @@
             font-size: 40px;
             font-family: cursive;
         }
+
     </style>
 </head>
 <body>
