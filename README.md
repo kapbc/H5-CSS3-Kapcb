@@ -253,6 +253,42 @@
         <td><a style="text-decoration: none;" href="#" target="_blank">051绝对定位</a></td>
     </tr>
     <tr>
+    	<td>固定定位</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">052固定定位</a></td>
+    </tr>
+    <tr>
+    	<td>粘滞定位</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">053粘滞定位</a></td>
+    </tr>
+    <tr>
+    	<td>绝对定位元素的位置</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">054绝对定位元素的位置</a></td>
+    </tr>
+    <tr>
+        <td>元素的层级</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">055元素的层级</a></td>
+    </tr>
+    <tr>
+        <td>轮播图练习</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">056轮播图练习</a></td>
+    </tr>
+    <tr>
+        <td>字体族</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">057字体族</a></td>
+    </tr>
+    <tr>
+        <td>图标字体简介</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">058图标字体简介</a></td>
+    </tr>
+    <tr>
+        <td>图标字体的其它使用方式</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">059图标字体的其它使用方式</a></td>
+    </tr>
+    <tr>
+        <td>行高</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">060行高</a></td>
+    </tr>
+    <tr>
         <td>文本格式化</td>
         <td><a style="text-decoration: none;" href="#" target="_blank">150文本格式化</a></td>
     </tr>
@@ -369,3 +405,4 @@
         <td><a style="text-decoration: none;" href="#" target="_blank">178login</a></td>
     </tr>
 </table>
+
