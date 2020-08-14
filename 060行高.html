@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行高</title>
+    <style>
+        /* 
+            行高（line-height）
+                行高指的是文字占有的实际高度
+                可以通过line-height来设置行高
+                    行高可以直接指定大小（px em）
+                    也可以直接设置一个整数
+                    如果是一个整数，行高将会是字体指定的倍数
+
+            字体框
+                字体框就是字体存在的格子，设置font-size实际上就是在设置字体框的高度
+
+            行高会在字体框的上下平均分配（类似自动居中）
+
+        */
+        div {
+            font-size: 50px;
+            border: brown solid 1px;
+            line-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>今天天气真不错!</div>
+
+</body>
+
+</html>

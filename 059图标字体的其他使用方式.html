@@ -4,10 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
     <title>图标字体的其他使用方式</title>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        /* 
+            通过伪元素设置图标字体
+                1、找到要设置图标的元素通过:::before或:::after选中
+                2、在content中设置字体的编码
+                3、设置字体的样式
+                    feb
+                    font-family: 'Font Awesome 5 Brands';
+
+                    fas
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+        */
+
+        li::before {
+            content: '\f1b0';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: blue;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
+    <ul>
+        <li>锄禾日当午</li>
+        <li>汗滴禾下土</li>
+        <li>谁知盘中餐</li>
+        <li>粒粒皆辛苦</li>
+    </ul>
+
+    <!-- 
+        通过实体来使用图标字体，
+            &#x图标编码
+     -->
+    <span class="fas fa-bell"></span>
+    <span class="fas">&#xf0f3;</span>
+
+    <i class="fas fa-bell" style="font-size: 80px; color: red;"></i>
+    <i class="fas fa-bell-slash"></i>
+    <i class="fab fa-accessible-icon" style="font-size: 80px; color: red;"></i>
 
 </body>
 
