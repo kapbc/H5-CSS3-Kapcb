@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本的水平和垂直对齐</title>
+    <style>
+        /* 
+            text-align: 文本的水平对齐
+                可选值：
+                    left 左侧对齐
+                    right 右侧对齐
+                    center 居中对齐
+                    justify 两端对齐
+            
+            vertical-align: 设置元素垂直对齐的方式
+                可选值：
+                    baseline(默认值)：基线对齐
+                    top：定边对齐
+                    bottom：底部对齐
+                    middle：居中对齐
+                还可设置值 px 
+
+                    
+
+        */
+        .div1 {
+            width: 500px;
+            border: 1px solid orange;
+            text-align: justify;
+        }
+
+        .div2 {
+            font-size: 60px;
+        }
+
+        .div2 span {
+            font-size: 20px;
+            border: 1px red solid;
+            vertical-align: 10px;
+        }
+
+        p {
+            border: orange solid 1px;
+        }
+
+        p img {
+            width: 450px;
+            height: 350px;
+            /* 消除图片与 p 标签的底部空袭，只要不让其使用默认的基线对齐即可 */
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos enim amet aut velit vero
+        laboriosam a
+        consectetur eum. Voluptate adipisci reprehenderit laboriosam, ipsa omnis labore ducimus beatae eligendi aut
+        numquam?
+    </div>
+
+    <div class="div2">今天天气x<span>真不错!</span></div>
+
+    <p>
+        <img src="/img/001.jpg.webp">
+    </p>
+
+</body>
+
+</html>

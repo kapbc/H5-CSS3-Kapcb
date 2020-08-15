@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本样式</title>
+    <style>
+        .box1 {
+            font-size: 50px;
+            /* 
+                text-decoration: 设置文本修饰
+                    可选值:
+                        none 什么都没有
+                        underline 下划线
+                        line-through 删除线
+                        overline 上划线
+
+                white-space（空白区域）: 设置网页如何处理空白
+                    可选值：
+                        normal（默认值）：正常
+                        nowrap：不换行
+                        pre：保留空白
+
+                text-overflow: 
+                    ellipsis：显示省略号
+
+            */
+            text-decoration: overline red;
+        }
+
+        .box2 {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">今天天气真不错</div>
+    <div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi possimus nam quia nobis fuga,
+        suscipit vero ullam doloribus perspiciatis ipsum. Laborum, voluptas. Quo necessitatibus unde debitis accusamus
+        labore nostrum totam!</div>
+
+</body>
+
+</html>

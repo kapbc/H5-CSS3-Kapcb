@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入重置样式表 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 引入图标字体 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
+    <title>顶部导航栏</title>
+    <style>
+        /* 避免因为子元素浮动导致父元素高度塌陷 */
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        /* 设置字体大小 */
+        body {
+            font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+        }
+
+        /* 设置外部容器的样式 */
+        .top-bar-wrapper {
+            /* 设置宽度 */
+            width: 100%;
+            height: 30px;
+            /* 设置行高，没有设置高度，能达到一样的效果，还可使文字水平居中 */
+            line-height: 30px;
+            /* 设置背景颜色 */
+            background-color: #E3E4E5;
+            /* 设置下边框 */
+            border-bottom: 1px solid #dddddd;
+        }
+
+        /* 设置内部容器的样式 */
+        .top-bar {
+            /* 规定宽度 */
+            width: 1190px;
+            /* 设置水平居中 */
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* 设置字体颜色以及a标签文本样式 */
+        .top-bar-wrapper .top-bar .location .current-city a,
+        .top-bar-wrapper .top-bar .shortcut li,
+        .top-bar-wrapper .top-bar .shortcut li a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        /* 设置鼠标移动样式以及高亮样式 */
+        .top-bar-wrapper .top-bar .location .current-city a:hover,
+        .top-bar-wrapper .top-bar .location .current-city a.highlight,
+        .top-bar-wrapper .top-bar .shortcut li a:hover,
+        .top-bar-wrapper .top-bar .shortcut li a.highlight {
+            color: #f10215;
+        }
+
+        /* 设置 location 向左浮动,使地点浮动 */
+        .top-bar-wrapper .top-bar .location {
+            float: left;
+        }
+
+        .top-bar-wrapper .top-bar .location .city-list {
+            width: 320px;
+            height: 436px;
+            background-color: white;
+            display: none;
+            border: 1px solid rgb(204, 204, 204);
+            /* 设置绝对定位，使其脱离文档流，不占据页面位置 */
+            position: absolute;
+            top: 31px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+            z-index: 999;
+        }
+
+        .top-bar-wrapper .top-bar .location .current-city {
+            padding: 0 10px;
+            position: relative;
+            z-index: 1000;
+            border: 1px solid transparent;
+            border-bottom: none;
+        }
+
+        /* 设置 .city-list 的移入效果 */
+        .top-bar-wrapper .top-bar .location:hover>.current-city {
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            border-bottom: none;
+            padding-bottom: 1px;
+        }
+
+
+        /* .top-bar-wrapper .top-bar .location .current-city:hover+.city-list {
+            display: block;
+        } */
+
+        /* 当鼠标一如到 location 时，要让 .city-list 显示 */
+        .top-bar-wrapper .top-bar .location:hover>.city-list {
+            display: block;
+        }
+
+
+        .top-bar-wrapper .top-bar .location .fas {
+            color: #f10215;
+        }
+
+        /* 设置 shortcut 向右浮动，使 ul 向右浮动*/
+        .top-bar-wrapper .top-bar .shortcut {
+            float: right;
+        }
+
+        /* 设置分割线 */
+        .top-bar-wrapper .top-bar .shortcut .line {
+            width: 1px;
+            height: 10px;
+            background-color: #999;
+            margin: 12px 12px 0;
+        }
+
+        /* 设置 li 向左浮动，使 ul 中的每个 li 元素都向左浮动，排列成一条*/
+        .top-bar-wrapper .top-bar .shortcut li {
+            float: left;
+        }
+
+        .top-bar-wrapper .top-bar .shortcut li i.fas {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建外围容器 -->
+    <div class="top-bar-wrapper clearfix">
+        <!-- 创建内部容器 -->
+        <div class="top-bar">
+            <!-- 左侧菜单 -->
+            <div class="location">
+                <div class="current-city">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="javascript:;">北京</a>
+                </div>
+
+                <!-- 放置城市列表的div -->
+                <div class="city-list">
+
+                </div>
+            </div>
+            <!-- 右侧菜单 -->
+            <ul class="shortcut clearfix">
+                <li>
+                    <a href="javascript:;">您好，请登录</a>
+                    <a href="javascript:;" class="highlight">免费注册</a>
+                </li>
+                <!-- 分割线 -->
+                <li class="line"></li>
+                <li><a href="javascript:;">我的订单</a></li>
+                <li class="line"></li>
+                <li><a href="javascript:;">我的京东</a><i class="fas fa-angle-down"></i></li>
+                <li class="line"></li>
+                <li><a href="javascript:;">京东会员</a></li>
+                <li class="line"></li>
+                <li><a href="javascript:;" class="highlight">企业采购</a><i class="fas fa-angle-down"></i></li>
+                <li class="line"></li>
+                <li><span>客户服务</span><i class="fas fa-angle-down"></i></li>
+                <li class="line"></li>
+                <li><span>网站导航</span><i class="fas fa-angle-down"></i></li>
+                <li class="line"></li>
+                <li><span>手机京东</span></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

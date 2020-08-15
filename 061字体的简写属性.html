@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体的简写属性</title>
+    <style>
+        div {
+            border: 1px solid red;
+            /* 
+                font 可以设置字体相关的所有属性
+                    语法：
+                        font：字体大小/行高 字体组
+                        先写字体大小，再写字体族，注意顺序
+                        
+                        行高可以省略不写 如果不写会使用默认值
+
+                font-weight: 
+                    字重，字体的加粗
+                    可选值：
+                        normal:加粗
+                        bold:不加粗
+                        100~900:9个级别 （没什么用）
+
+                font-style: i
+                    字体风格：
+                    可选值：
+                        normal:正常的
+                        talic：斜体
+            */
+            /* font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif; */
+            font: 50px/2 Arial, Helvetica, sans-serif;
+
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div>今天天气真不错,Hello!</div>
+
+</body>
+
+</html>
