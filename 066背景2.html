@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景2</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+            background-image: url(./img/007.jpg.webp);
+            background-repeat: repeat;
+            background-position: top right;
+            background-position: 10px 10px;
+
+            /* 
+                    background-clip:设置背景的范围 
+                        可选值：
+                            border-box 默认值，背景会出现在边框的下边
+                            padding-box 背景不会出现在边框，只会出现在内容区和内边框
+                            content-box 背景只出现在内容区域
+
+                    background-origin:设置背景图片的偏移量计算的原点
+                        可选值：
+                            padding-box 默认值 background-position 从内边距处开始计算
+                            content-box 背景图片的偏移量从内容区处计算
+                            border-box 背景图片的偏移量从边框处开始计算
+
+                    background-size:设置背景图片的大小
+                        第一个值表示宽度
+                        第二个值表示高度
+                        如果只写一个值，则第二个值默认是auto，等比例缩放
+                        
+                        cover 图片的比例不变，将元素铺满
+                        contain 图片比例不变，将图片在元素中完整显示
+
+                    background-attachment:设置背景图片是否跟随元素移动
+                        可选值：
+                            scroll 默认值，背景图片会随元素滚动
+                            fixed 背景图片会固定在页面中，不会随元素移动
+
+
+                    background:背景相关的简写属性，所有背景相关的样式都可以通过该样式来设置
+                        各个值之间无顺序要求，也没有哪个属性是必须写的
+                        
+                        注意：
+                            background-size必须写在background-position的后面，并且使用 / 隔开
+                                background-position/background-size
+
+                            background-origin和background-clip 两个样式，background-origin必须在background-clip前面                                                                                                                                                                        
+
+            */
+            background-origin: pad;
+            background-clip: content-box;
+            border: red double 10px;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+
+</body>
+
+</html>
