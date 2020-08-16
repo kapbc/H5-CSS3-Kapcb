@@ -10,7 +10,6 @@
 - 记录自己关于H5和CSS3的学习笔记还有Demo，笔记均在Demo注释部分，后续会整理成MarkDown格式的文件发布在博客上。
 - 如果觉得对您有帮助，您的`Start`就是对我最大的认同。
 - 欢迎互相学习交流，如果项目中有问题的部分可以用邮箱联系我`eircccallroot@163.com`。
-- 欢迎翻阅我的私人博客`https.www.ccaizx.cn`,记录日常学习中的一些自己对相关技术的学习笔记等。
 
 ### 其他项目
 
@@ -57,11 +56,8 @@
     	<td><a style="text-decoration: none;" href="#" target="_blank"><strong>Vue-Kapcb</strong></a></td>
         <td><a style="text-decoration: none;" href="#" target="_blank"><strong>Web前端Vue.js学习项目(规划中、含笔记)</strong></a></td>
     </tr>
-    <tr>
-        <td><a style="text-decoration: none;" href="https://www.ccaizx.cn" target="_blank" ><b>个人博客</b><a</td>
-        <td><a style="text-decoration: none;" href="https://www.ccaizx.cn" target="_blank" ><b>https://www.ccaizx.cn</b></a></td>
-    </tr>
 </table>
+
 
 ### 项目简介
 
@@ -289,6 +285,38 @@
         <td><a style="text-decoration: none;" href="#" target="_blank">060行高</a></td>
     </tr>
     <tr>
+        <td>字体的简写属性</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">061字体的简写属性</a></td>
+    </tr>
+    <tr>
+        <td>文本的水平和垂直对齐</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">062文本的水平和垂直对齐</a></td>
+    </tr>
+    <tr>
+        <td>文本样式</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">063文本样式</a></td>
+    </tr>
+    <tr>
+        <td>顶部导航栏</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">064顶部导航栏</a></td>
+    </tr>
+    <tr>
+        <td>背景</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">065背景</a></td>
+    </tr>
+    <tr>
+        <td>背景2</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">066背景2</a></td>
+    </tr>
+    <tr>
+        <td>线性渐变</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">067线性渐变</a></td>
+    </tr>
+    <tr>
+        <td>径向渐变</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">068径向渐变</a></td>
+    </tr>
+    <tr>
         <td>文本格式化</td>
         <td><a style="text-decoration: none;" href="#" target="_blank">150文本格式化</a></td>
     </tr>
@@ -405,4 +433,5 @@
         <td><a style="text-decoration: none;" href="#" target="_blank">178login</a></td>
     </tr>
 </table>
+
 

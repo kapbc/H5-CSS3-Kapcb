@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>径向渐变</title>
+    <style>
+        /* 
+            radial-gradient(red, orange); 径向渐变（放射性效果）
+                
+                默认情况下，径向渐变的形状是根据元素的形状来计算的
+                    正方形 --> 圆形
+                    长方形 --> 椭圆形
+
+                也可以手动指定圆心的大小
+                     radial-gradient(50px 50px, red, orange):径向渐变的范围是 50px x 50px
+
+                也可以指定渐变的位置
+                    通过 at 设置渐变的位置
+
+                    radial-gradient(大小 at 位置，颜色，起始位置，颜色，起始位置，颜色，起始位置)
+                        大小：
+                            circle：表示正圆
+                            ellipse：表示椭圆
+                            closest-side：近边
+                            closest-corner：进角
+                            farthest-side：远边
+                            farthest-corner：远角
+
+                        位置：
+                            top right bottom left center
+        */
+        .box1 {
+            width: 200px;
+            height: 200px;
+
+            background-image: radial-gradient(50px 50px at 10px 100px, orange, #bfa);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+</body>
+
+</html>
