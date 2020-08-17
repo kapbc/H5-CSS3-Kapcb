@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单补充</title>
+</head>
+
+<body>
+    <!-- 
+        type = "button" 就是一个普通按钮，点击之后没任何效果，使用最多的，一般配合js使用
+
+        下面的 button标签中的按钮与上面效果一致，type="button"还是只是普通点击按钮
+
+        autocomplete="off" 关闭自动补全，on表示开启 
+
+        readonly 将表单项设置为只读，数据会提交
+        disabled 将表单项设置为禁用，数据不会提交
+        autofocus 设置表单项自动获取焦点，光标会自动在input框中
+
+     -->
+    <form action="./074表单提交模拟.html" autocomplete="off">
+        <label for="">用户名</label>
+        <input type="text" name="username" placeholder="请输入用户名" autocomplete="off"><br />
+        <label for="">密码</label>
+        <input type="password" name="password" placeholder="请输入密码" autofocus><br />
+
+        <input type="color">
+        <input type="submit" value="确定">
+        <input type="button" value="button">
+        <input type="reset" value="重置"><br />
+
+        <button type="button">提交</button>
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+    </form>
+
+</body>
+
+</html>

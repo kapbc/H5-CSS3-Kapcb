@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单简介</title>
+
+</head>
+
+<body>
+    <!-- 
+
+        表单：
+            在现实生活中表单用于提交数据
+            在网页中也可以使用表单，网页中的表单用于将本地的数据提交给远程服务器
+            使用 form 标签创建表单
+                action:指定表单要提交的服务器的地址
+
+            <input type="submit"> 默认值是显示：提交
+            可以使用 value 属性指定显示信息
+
+            数据要提交服务器中，必须要为元素指定一个 name 属性
+
+            单选框：使用input设置时，type指定为radio，name属性为一样时，表示为一组单选框(一组单选框只能同时选中一个)
+            使用 value 属性进行区分指定，用于后端判定
+
+            多选框：使用input设置时，type指定为checkbox
+
+            下拉列表：select 标签与 option 标签配合使用
+     -->
+    <form action="./074表单提交模拟.html">
+        <!-- 添加表单项，文本框 -->
+        <label for="">账户</label>
+        <input type="text" name="name"><br />
+        <label for="">密码</label>
+        <input type="password" name="password"><br />
+        <label for="">单选框</label>
+        <input type="radio" name="kapcb" value="1" checked>
+        <input type="radio" name="kapcb" value="2"><br />
+        <label for="">多选框</label>
+        <input type="checkbox" name="test" value="1">
+        <input type="checkbox" name="test" value="2" checked>
+        <input type="checkbox" name="test" value="3"><br />
+        <select name="ccc">
+            <option value="i1">选项一</option>
+            <option value="i2" selected>选项二</option>
+            <option value="i3">选项三</option>
+            <option value="i4">选项三</option>
+        </select><br />
+        <input type="submit" value="确定">
+        <input type="reset">
+    </form>
+
+</body>
+
+</html>

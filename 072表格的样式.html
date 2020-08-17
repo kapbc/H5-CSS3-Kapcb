@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格的样式</title>
+    <style>
+        /* 
+            border-spacing 指定边框之间的距离
+
+            border-collapse 设置边框的合并
+
+            默认情况下元素在 td 中是垂直剧中的，可以通过vertical-align进行设置
+        */
+        table {
+            width: 20%;
+            margin: 0 auto;
+            border: 1px solid orange;
+            /* 合并边框 */
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid yellowgreen;
+        }
+
+        td {
+            border: 1px solid red;
+            vertical-align: top;
+        }
+
+        /* 
+            如果表格中没有使用 tbody 而是直接使用 tr
+            那么浏览器会自动创建一个 tbody，并将 tr 全部放到 tbody中
+            所有 tr 并不是 table 的子元素
+        */
+
+        /* 隔行变色 */
+        tr:nth-child(even) {
+            background-color: #bfa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>住址</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>孙悟空</td>
+                <td>男</td>
+                <td>100</td>
+                <td>花果山</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>猪八戒</td>
+                <td>男</td>
+                <td>80</td>
+                <td>高老庄</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>沙和尚</td>
+                <td>男</td>
+                <td>80</td>
+                <td>流沙河</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>唐僧</td>
+                <td>男</td>
+                <td>16</td>
+                <td>女儿国</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
