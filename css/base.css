@@ -1,0 +1,29 @@
+/* 小米公共样式 */
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
+    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+    color: #333;
+    background-color: #fff;
+    /* 最小的宽度，不让body过小 */
+    min-width: 1226px;
+}
+
+.screen-warpper {
+    /* 固定容器的宽度 */
+    width: 1226px;
+    /* 设置容器居中 */
+    margin: 0 auto;
+}
+
+/* 取出a标签下划线 */
+a {
+    text-decoration: none;
+    color: #b0b0b0; 
+}
+

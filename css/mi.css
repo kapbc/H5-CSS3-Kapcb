@@ -1,0 +1,112 @@
+/* 主页样式表 */
+
+/* 顶部导航条容器 */
+.top-bar-wrapper {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+}
+
+/* 设置左侧导航栏 */
+.service,
+.top-bar li {
+    float: left;
+}
+
+.app {
+    position: relative;
+}
+
+/* 设置倒三角 */
+.sanjiao {
+    width: 0px;
+    height: 0px;
+    /* 设置边框颜色透明 */
+    border: 8px solid transparent;
+    border-color: transparent transparent #fff transparent;
+    /* 消除上边框 */
+    border-top: none;
+    /* 居中 */
+    margin: 0 auto;
+    position: absolute;
+    top: 32px;
+    left: 10px;
+    display: none;
+}
+
+/* 设置app下拉框 */
+.app .qrcode {
+    width: 124px;
+    height: 148px;
+    /* 重置行高，后买你的span继承，不然span中行高继承的是40px，会被挤出div */
+    line-height: 1;
+    /* 设置span字体居中 */
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    /* 开启绝对定位，相对于父元素，所以开启.app的相对定位 */
+    position: absolute;
+    top: 40px;
+    left: -45px;
+    display: none;
+}
+
+/* 下拉框移入效果 */
+.app:hover .sanjiao,
+.app:hover .qrcode {
+    display: block;
+}
+
+.app img {
+    width: 90px;
+    height: 90px;
+    margin: 17px 17px;
+    margin-bottom: 10px;
+}
+
+.app span {
+    color: black;
+    font-size: 14px;
+}
+
+/* 设置右侧导航栏 */
+.shop-car,
+.user-info {
+    float: right;
+}
+
+/* 设置文字颜色 */
+.top-bar a {
+    font-size: 12px;
+    color: #b0b0b0;
+    /* 设置 a 标签周围都能点击超链接 */
+    display: block;
+}
+
+/* 设置鼠标移入效果 */
+.top-bar a:hover {
+    color: white;
+}
+
+.top-bar-line {
+    color: #424242;
+    font-size: 12px;
+    margin: 0 .6em;
+}
+
+.shop-car {
+    margin-left: 26px;
+}
+
+/* 设置购物车样式 */
+.shop-car a {
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+}
+
+.shop-car:hover a {
+    color: orange;
+    background-color: #fff;
+}
