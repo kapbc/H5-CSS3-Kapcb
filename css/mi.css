@@ -38,7 +38,8 @@
 /* 设置app下拉框 */
 .app .qrcode {
     width: 124px;
-    height: 148px;
+    height: 0;
+    overflow: hidden;
     /* 重置行高，后买你的span继承，不然span中行高继承的是40px，会被挤出div */
     line-height: 1;
     /* 设置span字体居中 */
@@ -49,13 +50,19 @@
     position: absolute;
     top: 40px;
     left: -45px;
-    display: none;
+    /* display: none; */
+    /* transition：用于为元素设置过渡效果 */
+    transition: height 0.3s;
 }
 
 /* 下拉框移入效果 */
-.app:hover .sanjiao,
+.app:hover .sanjiao {
+    display: block;
+}
+
 .app:hover .qrcode {
     display: block;
+    height: 148px;
 }
 
 .app img {
@@ -109,4 +116,22 @@
 .shop-car:hover a {
     color: orange;
     background-color: #fff;
+}
+
+/* ==================================== */
+/* 设置中间的header */
+.header {
+    height: 100px;
+    background-color: #bfa;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo a {
+    width: 55px;
+    height: 55px;
+    display: block;
+    background-color: orange;
 }
