@@ -122,19 +122,44 @@
 /* 设置中间的header */
 .header {
     height: 100px;
-    background-color: #bfa;
+    /* background-color: #bfa; */
 }
 
+/* 设置logo中h1的样式 */
 .header .logo {
-    float: left;
+    margin-top: 22px;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+    /* 首行缩进，让h1中得 小米官网 往左移动，隐藏起来，队搜索引擎友好 */
+    text-indent: -100px;
 }
 
+/* 设置 logo中a标签的样式 */
 .header .logo a {
     width: 55px;
     height: 55px;
-    display: block;
+    position: absolute;
+    left: 0;
     background-color: transparent;
-    margin-top: 22px;
     background-size: contain;
-    background-image: url(../img/miLogo.jpg);
+    background-image: url(../img/mi-logo.png);
+    transition: left 0.2s;
+}
+
+/* 设置 home 图片 */
+.header .logo .home {
+    left: -55px;
+    background-image: url(../img/mi-home.png);
+}
+
+/* 设置 mi 图片移入效果 */
+.header .logo:hover .mi {
+    left: 55px;
+}
+
+/* 移入效果 */
+.header .logo:hover .home {
+    left: 0;
 }
