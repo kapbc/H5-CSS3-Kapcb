@@ -131,6 +131,7 @@
     width: 55px;
     height: 55px;
     position: relative;
+    float: left;
     overflow: hidden;
     /* 首行缩进，让h1中得 小米官网 往左移动，隐藏起来，队搜索引擎友好 */
     text-indent: -100px;
@@ -142,8 +143,8 @@
     height: 55px;
     position: absolute;
     left: 0;
-    background-color: transparent;
-    background-size: contain;
+    /* background-color: transparent; */
+    /* background-size: contain; */
     background-image: url(../img/mi-logo.png);
     transition: left 0.2s;
 }
@@ -162,4 +163,38 @@
 /* 移入效果 */
 .header .logo:hover .home {
     left: 0;
+}
+
+/* 设置中间导航条 */
+.header .nav-wrapper {
+    float: left;
+    margin-left: 7px;
+}
+
+/* 设置导航条 */
+.header .nav {
+    /* background-color: #bfa; */
+    line-height: 100px;
+    padding-left: 58px;
+}
+
+/* 设置导航条中的li标签样式 */
+.header .nav-wrapper li {
+    float: left;
+}
+
+/* 设置li标签中a标签的样式 */
+.header .nav-wrapper li a {
+    display: block;
+    font-size: 16px;
+    margin-right: 20px;
+    color: black;
+}
+
+.nav-wrapper li a:hover {
+    color: #ff6700;
+}
+
+.all-goods {
+    visibility: hidden;
 }
