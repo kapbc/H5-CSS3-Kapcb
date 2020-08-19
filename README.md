@@ -309,12 +309,40 @@
         <td><a style="text-decoration: none;" href="#" target="_blank">066背景2</a></td>
     </tr>
     <tr>
+        <td>背景练习</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">067背景练习</a></td>
+    </tr>
+    <tr>
         <td>线性渐变</td>
-        <td><a style="text-decoration: none;" href="#" target="_blank">067线性渐变</a></td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">068线性渐变</a></td>
     </tr>
     <tr>
         <td>径向渐变</td>
-        <td><a style="text-decoration: none;" href="#" target="_blank">068径向渐变</a></td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">069径向渐变</a></td>
+    </tr>
+    <tr>
+        <td>表格的简介</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">070表格的简介</a></td>
+    </tr>
+    <tr>
+        <td>长表格</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">071长表格</a></td>
+    </tr>
+    <tr>
+        <td>表格的样式</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">072表格的样式</a></td>
+    </tr>
+    <tr>
+        <td>表单简介</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">073表单简介</a></td>
+    </tr>
+    <tr>
+        <td>表格模拟提交</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">074表单模拟提交</a></td>
+    </tr>
+    <tr>
+        <td>表格补充</td>
+        <td><a style="text-decoration: none;" href="#" target="_blank">075表单补充</a></td>
     </tr>
     <tr>
         <td>文本格式化</td>
