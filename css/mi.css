@@ -251,6 +251,7 @@
 
 }
 
+/* 设置搜索框按钮的样式 */
 .search-wrapper .search-btn{
     float: left;    
     width: 52px;
