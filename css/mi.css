@@ -73,7 +73,7 @@
     margin-bottom: 10px;
 }
 
-.header-wrapper{
+.header-wrapper {
     position: relative;
 }
 
@@ -204,7 +204,7 @@
     visibility: hidden;
 }
 
-.nav .goods-info{
+.nav .goods-info {
     /* height: 228px; */
     height: 0;
     overflow: hidden;
@@ -220,7 +220,7 @@
 
 /* ~兄弟选择器，选择后面所有的 */
 .nav li:not(:first-of-type):not(:nth-child(9)):not(:nth-child(10)):hover~.goods-info,
-.goods-info:hover{
+.goods-info:hover {
     height: 228px;
     border-top: 1px solid rgb(224, 224, 224);
     box-shadow: 0 5px 3px rgba(0, 0, 0, .3);
@@ -229,18 +229,19 @@
 }
 
 /* 搜索框 */
-.search-wrapper{
+.search-wrapper {
     width: 296px;
     height: 50px;
     float: right;
     background-color: red;
     margin-top: 25px;
-    border:  1px solid rgb(224, 224, 224);
+    /* border:  1px solid rgb(224, 224, 224); */
 }
 
 /* 消除输入框与搜索按钮之间的间隙，让两者都向左浮动 */
-.search-wrapper .search-input{
-    width: 224px;
+.search-wrapper .search-input {
+    box-sizing: border-box;
+    width: 244px;
     float: left;
     border: none;
     padding: 0;
@@ -248,12 +249,21 @@
     /* 使输入框中的输入的字不要紧贴边框 */
     padding: 0 10px;
     font-size: 16px;
+    border: 1px solid rgb(224, 224, 224);
+    /* 将轮廓线设置失效 */
+    outline: none;
 
 }
 
+/* 设置input输入框的点击时获取焦点的样式,在input框获取焦点时，也选中button标签 */
+.search-wrapper .search-input:focus,
+.search-wrapper .search-input:focus+button {
+    border-color: #ff6700;
+}
+
 /* 设置搜索框按钮的样式 */
-.search-wrapper .search-btn{
-    float: left;    
+.search-wrapper .search-btn {
+    float: left;
     width: 52px;
     height: 50px;
     padding: 0;
@@ -261,5 +271,14 @@
     background-color: #fff;
     color: #616161;
     font-size: 16px;
-    border-left: 1px solid rgb(224, 224, 224);
+    border: 1px solid rgb(224, 224, 224);
+    border-left: none;
+    outline: none;
+}
+
+/* 设置button的鼠标移入样式 */
+.search-wrapper .search-btn:hover {
+    background-color: #ff6700;
+    color: #fff;
+    border: none;
 }
