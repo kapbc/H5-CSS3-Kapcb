@@ -218,6 +218,7 @@
 
 /* 设置导航栏中a标签鼠标移入样式 */
 ul .main-left-menu li a:hover {
+    color: white;
     background-color: #ff6700;
 }
 
@@ -243,7 +244,7 @@ ul .main-left-menu li a:hover {
     visibility: hidden;
 }
 
-.nav .goods-info {
+.nav-wrapper .nav .goods-info {
     /* height: 228px; */
     height: 0;
     overflow: hidden;
@@ -258,8 +259,8 @@ ul .main-left-menu li a:hover {
 }
 
 /* ~兄弟选择器，选择后面所有的 */
-.nav li:not(:first-of-type):not(:nth-child(9)):not(:nth-child(10)):hover~.goods-info,
-.goods-info:hover {
+.nav-wrapper .nav li:not(:first-of-type):not(:nth-child(9)):not(:nth-child(10)):hover~.goods-info,
+.nav-wrapper .goods-info:hover {
     height: 228px;
     border-top: 1px solid rgb(224, 224, 224);
     box-shadow: 0 5px 3px rgba(0, 0, 0, .3);
@@ -330,16 +331,45 @@ ul .main-left-menu li a:hover {
     margin: 0 auto;
 }
 
+/* 开启相对定位 */
+.banner {
+    position: relative;
+    height: 460px;
+}
+
 /* 设置banner中的img标签样式 */
 .banner .img-list li {
     position: absolute;
 }
 
+/* 设置图片的样式 */
 .banner img {
-    width: 1226px;
-    height: 460px;
+    width: 100%;
     vertical-align: top;
 }
 
+
+/* 设置小圆点的样式 */
+.pointer {
+    position: absolute;
+    right: 35px;
+    bottom: 22px;
+}
+
+.pointer a {
+    float: left;
+    width: 6px;
+    height: 6px;
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .4);
+    margin-left: 6px;
+}
+
+.pointer a:hover,
+.pointer a.active {
+    border-color: rgba(0, 0, 0, .4);
+    background-color: rgba(255, 255, 255, .4);
+}
 
 /* ====================主页样式表===========create by kapcb date 2020/08/16========= */
