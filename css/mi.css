@@ -323,5 +323,23 @@ ul .main-left-menu li a:hover {
 }
 
 
+/* 设置banner的样式 */
+.banner-wrapper {
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+}
+
+/* 设置banner中的img标签样式 */
+.banner .img-list li {
+    position: absolute;
+}
+
+.banner img {
+    width: 1226px;
+    height: 460px;
+    vertical-align: top;
+}
+
 
 /* ====================主页样式表===========create by kapcb date 2020/08/16========= */
