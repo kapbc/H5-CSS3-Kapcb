@@ -374,4 +374,37 @@ ul .main-left-menu li a:hover {
     background-color: rgba(255, 255, 255, .4);
 }
 
+/* 设置banner箭头雪碧图导航 */
+.prev-next a {
+    width: 41px;
+    height: 69px;
+    /* background-color: red; */
+    background-image: url(../img/icon-slides.png);
+    position: absolute;
+    /* 水平居中显示 */
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+/* banner箭头雪碧图定位 */
+.prev-next .prev {
+    left: 234px;
+    background-position: -84px 0;
+}
+
+.prev-next .next {
+    right: 0;
+    background-position: -125px 0;
+}
+
+/* 鼠标移入效果 */
+.prev-next .prev:hover {
+    background-position: 0 0;
+}
+
+.prev-next .next:hover {
+    background-position: -42px 0;
+}
+
 /* ====================主页样式表===========create by kapcb date 2020/08/16========= */
