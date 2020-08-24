@@ -421,4 +421,17 @@ ul .main-left-menu li a:hover {
     margin-right: -639px;
 }
 
+/* 设置banner底部三个图片的样式 */
+.banner-bottom-img{
+    background-color: #ff6700;
+    height: 170px;
+    margin-top: 14px;
+
+}
+
+.imgs .shortcut,
+.imgs .banner-bottom-img,
+.imgs li{
+    float: left;
+}
 /* ====================主页样式表===========create by kapcb date 2020/08/16========= */
