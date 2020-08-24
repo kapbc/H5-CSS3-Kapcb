@@ -445,6 +445,23 @@ ul .main-left-menu li a:hover {
     margin-top: 14px
 }
 
+.imgs .shortcut a {
+    /* 设置超链接外部可点击 */
+    display: block;
+    color: #cfccca;
+    height: 84px;
+    width: 76px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* 设置图标字体样式 */
+.imgs .shortcut i {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
 .imgs .banner-bottom-img li {
     width: 316px;
     margin-right: 15px;
