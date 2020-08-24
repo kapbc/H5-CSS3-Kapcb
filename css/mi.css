@@ -60,6 +60,7 @@
     display: block;
 }
 
+/* app二维码 */
 .app:hover .qrcode {
     display: block;
     height: 148px;
@@ -405,6 +406,19 @@ ul .main-left-menu li a:hover {
 
 .prev-next .next:hover {
     background-position: -42px 0;
+}
+
+/* 设置回到顶部的样式 */
+.back-top {
+    width: 26px;
+    height: 206px;
+    background-color: orange;
+    /* 开启固定定位 */
+    position: fixed;
+    /* 浏览器自动计算的举例 + 固定的距离 = 紧贴banner */
+    bottom: 150px;
+    right: 50%;
+    margin-right: -639px;
 }
 
 /* ====================主页样式表===========create by kapcb date 2020/08/16========= */
