@@ -422,16 +422,41 @@ ul .main-left-menu li a:hover {
 }
 
 /* 设置banner底部三个图片的样式 */
-.banner-bottom-img{
-    background-color: #ff6700;
+.banner-bottom-img {
+    background-color: #fff;
     height: 170px;
     margin-top: 14px;
 
 }
 
+/* 设置底部图片以及底部左侧快捷方式浮动 */
 .imgs .shortcut,
 .imgs .banner-bottom-img,
-.imgs li{
+.imgs li {
     float: left;
 }
+
+/* 设置左侧快捷方式 */
+.imgs .shortcut {
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+    margin-right: 14px;
+    margin-top: 14px
+}
+
+.imgs .banner-bottom-img li {
+    width: 316px;
+    margin-right: 15px;
+}
+
+.imgs .banner-bottom-img li:last-child {
+    margin: 0;
+}
+
+.imgs .banner-bottom-img img {
+    width: 100%;
+    vertical-align: top;
+}
+
 /* ====================主页样式表===========create by kapcb date 2020/08/16========= */
