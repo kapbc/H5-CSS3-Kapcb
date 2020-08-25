@@ -64,7 +64,7 @@
 .app:hover .qrcode {
     display: block;
     height: 148px;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .app img {
