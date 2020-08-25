@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 800px;
+            height: 800px;
+            background-color: silver;
+            overflow: hidden;
+        }
+
+        .box1 div {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+
+        /* 
+            过渡（transition）
+                - 通过过渡可以指定一个属性发生变化时的切换方式
+                - 通过过渡可以创建一些非常好的交互效果，提升用户体验
+
+            属性：
+                transition-property: 指定需要过渡的属性
+                    多个属性间，使用逗号隔开，如果所有属性都需要指定过渡，可以使用 all 关键字
+                    大部分属性都支持过渡效果，只要能够计算的属性，都可指定过渡效果
+                    注意：过渡时，必须从一个有效数值向另外一个有效数值过渡
+
+                transition-duration: 指定过渡效果持续的时间（必须指定、否则无效）
+                    时间单位： s 和 ms，1s = 1000ms
+                    可以分别为属性指定时间，与指定的属性一一对应，多个属性以逗号隔开
+
+                transition-timing-function: 过渡的时序函数
+                    指定过渡的执行方式
+
+                transition-delay:
+
+        */
+
+        .box2 {
+            background-color: #bfa;
+            transition-property: width ,height;
+            transition-duration: 2s;
+        }
+
+        .box1:hover div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box3{
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+
+</body>
+
+</html>
