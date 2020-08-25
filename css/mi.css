@@ -438,11 +438,13 @@ ul .main-left-menu li a:hover {
 
 /* 设置左侧快捷方式 */
 .imgs .shortcut {
-    width: 234px;
+    width: 228px;
     height: 170px;
     background-color: #5f5750;
     margin-right: 14px;
-    margin-top: 14px
+    margin-top: 14px;
+    padding-top: 2;
+    padding-left: 6px;
 }
 
 .imgs .shortcut a {
@@ -457,14 +459,46 @@ ul .main-left-menu li a:hover {
     overflow: hidden;
 }
 
-.imgs .shortcut a:hover{
+.imgs .shortcut a:hover {
     color: #fff;
 }
+
 /* 设置图标字体样式 */
 .imgs .shortcut i {
     display: block;
     margin-top: 20px;
     font-size: 20px;
+}
+
+.imgs .shortcut li {
+    position: relative;
+}
+
+/* 设置上边框 */
+.imgs .shortcut li::before {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    background-color: #665657;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* 设置左边框 */
+.imgs .shortcut li::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    background-color: #665657;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto 0;
+
 }
 
 .imgs .banner-bottom-img li {
