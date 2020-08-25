@@ -453,8 +453,13 @@ ul .main-left-menu li a:hover {
     width: 76px;
     text-align: center;
     font-size: 12px;
+    /* 开启bfc */
+    overflow: hidden;
 }
 
+.imgs .shortcut a:hover{
+    color: #fff;
+}
 /* 设置图标字体样式 */
 .imgs .shortcut i {
     display: block;
