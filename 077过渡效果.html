@@ -41,6 +41,14 @@
 
                 transition-timing-function: 过渡的时序函数
                     指定过渡的执行方式
+                    可选值：
+                        ease：默认值，慢速开始，先加速、在减速
+                        linear：匀速运动
+                        ease-in：加速运动（慢速开始）
+                        ease-out：减速运动（停止的时候慢）
+                        ease-in-out：先加速、后减速
+                        cubic-bezier()：指定时序函数（贝塞尔曲线、如何自定可百度）
+
 
                 transition-delay:
 
@@ -48,8 +56,9 @@
 
         .box2 {
             background-color: #bfa;
-            transition-property: width ,height;
+            transition-property: width, height;
             transition-duration: 2s;
+            transition-timing-function: cubic-bezier(0, 0, 1, 1);
         }
 
         .box1:hover div {
@@ -57,8 +66,9 @@
             height: 200px;
         }
 
-        .box3{
+        .box3 {
             background-color: orange;
+            transition-duration: 2s;
         }
     </style>
 </head>
