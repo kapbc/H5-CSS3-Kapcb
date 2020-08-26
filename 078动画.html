@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 900px;
+            height: 900px;
+            background-color: silver;
+            overflow: hidden;
+        }
+
+        /* 
+            动画
+                动画和过渡类似，都是可以实现一些动态的效果、不同的
+                是过渡需要在某个属性发生变化时才会触发，动画可以自
+                动触发动态效果
+
+                设置动画效果，必须先要设置一个关键帧，关键帧设置了
+                动画执行的每一个步骤
+
+            @关键 帧的名字
+            @keyframes identifier {
+                from{}  表示动画开始的位置、也可以使用 0% 表示
+
+                to{}  表示动画结束的位置、也可以使用 100% 表示
+            }
+
+
+            animation-name: 要对当前元素生效的关键帧的名字
+            animation-duration: 动画执行的时间
+            animation-timing-function: 动画的时序函数
+            animation-iteration-count: 动画执行的次数
+                可选值：
+                    数字：执行多少次
+                    infinite: 无限执行
+
+            animation-direction: 动画执行的方向
+                可选值
+
+                normal：（默认值）从 from 向 to 运行，每次都是如此
+                reverse：从 to 向 from 运行，每次都是如此
+                alternate：从 from 向 to 运行，重复执行动画时反向执行
+                alternate-reverse：从 to 向 from 运行，重复执行动画时反向执行
+
+
+            animation-play-state: 设置的执行状态
+                可选值:
+                    running: (默认值)动画执行
+                    paused: 动画暂停
+
+            animation-fill-mode: 动画的填充模式
+                可选值：
+                    none：（默认值）动画执行完毕元素回到初始位置
+                    forwards: 动画执行完毕，元素会停止在动画结束位置
+                    backwards: 动画延时等待时，动画就会处于开始位置
+
+        */
+
+        @keyframes kapcb {
+            from {
+                margin-left: 0;
+            }
+
+            to {
+                margin-left: 800px;
+            }
+
+        }
+
+        .box1 div {
+            width: 100px;
+            height: 100px;
+            margin-left: 0;
+            margin-bottom: 100px;
+        }
+
+        .box2 {
+            background-color: #bfa;
+            /* transition-property: all; */
+            /* transition-duration: 2s; */
+            /* transition-timing-function: cubic-bezier(.24, .95, .82, -0.88); */
+            /* transition-delay: 1s; */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: kapcb;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: backwards;
+
+        }
+
+        .box1:hover div {
+            animation-play-state: paused;
+        }
+
+        .box3 {
+            background-color: orange;
+            transition-duration: 2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+        <div class="box2"></div>
+        <!-- <div class="box3"></div> -->
+    </div>
+
+
+</body>
+
+</html>
