@@ -12,8 +12,8 @@
         }
 
         .box1 {
-            width: 800px;
-            height: 800px;
+            width: 900px;
+            height: 900px;
             background-color: silver;
             overflow: hidden;
         }
@@ -21,6 +21,7 @@
         .box1 div {
             width: 100px;
             height: 100px;
+            margin-left: 0;
             margin-bottom: 100px;
         }
 
@@ -48,22 +49,30 @@
                         ease-out：减速运动（停止的时候慢）
                         ease-in-out：先加速、后减速
                         cubic-bezier()：指定时序函数（贝塞尔曲线、如何自定可百度）
+                        steps(): 分布执行过渡效果
+                            可以设置第二个值
+                                end：表示在时间结束时执行过渡
+                                start：表示在时间开始时执行过渡
 
+                transition-delay: 表示过渡效果的延迟,等待相应的时间后在执行过渡
 
-                transition-delay:
+                transition: 可以同时设置过度相关的所有属性，只有一个要求，如果需要使用延迟，则两个时间中
+                第一个时间是持续时间，第二个是延迟时间
 
         */
 
         .box2 {
             background-color: #bfa;
-            transition-property: width, height;
+            transition-property: all;   
             transition-duration: 2s;
-            transition-timing-function: cubic-bezier(0, 0, 1, 1);
+            transition-timing-function: cubic-bezier(.24, .95, .82, -0.88);
+            /* transition-timing-function: steps(); */
+            transition-delay: 1s;
+
         }
 
         .box1:hover div {
-            width: 200px;
-            height: 200px;
+            margin-left: 800px;
         }
 
         .box3 {
