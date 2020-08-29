@@ -18,6 +18,10 @@
                         - 在平移元素时，百分比是相对于自身计算的
 
         */
+        body {
+            background-color: rgb(2236, 236, 236);
+        }
+
         .box1 {
             width: 200px;
             height: 200px;
@@ -53,11 +57,28 @@
 
             /* 
                 定位中间，然后相对自生左移 50%
+
+                一个元素只能设置一个transform属性，后面设置的都会将前面的覆盖
             */
             left: 50%;
             top: 50%;
             transform: translateX(-50%) translateY(-50%);
 
+        }
+
+        .box4,
+        .box5 {
+            width: 220px;
+            height: 300px;
+            background-color: #fff;
+            float: left;
+            margin: 0 20px;
+            transition: all .3s;
+        }
+
+        .box4:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         }
     </style>
 </head>
@@ -66,6 +87,8 @@
     <div class="box1"></div>
     <div class="box2"></div>
     <div class="box3">aaa</div>
+    <div class="box4"></div>
+    <div class="box5"></div>
 
 </body>
 
