@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        .outer {
+            height: 500px;
+            border-bottom: 10px solid black;
+            margin: 50px auto;
+            /* 开启bfc，避免外边距重叠 */
+            overflow: hidden;
+        }
+
+        .outer div {
+            float: left;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #bfa;
+
+            animation: kapcb .5s forwards linear infinite alternate;
+        }
+
+        /* 创建小球下落的动画 */
+        @keyframes kapcb {
+            from {
+                margin-top: 0;
+            }
+
+            /* 20%,
+            60%, */
+            to {
+                margin-top: 400px;
+                animation-timing-function: ease-in;
+            }
+
+            /* 40% {
+                margin-top: 100px;
+            }
+
+            80% {
+                margin-top: 200px;
+            } */
+        }
+
+        div.box2 {
+            background-color: orange;
+            animation-delay: .2s;
+        }
+
+        div.box3 {
+            background-color: yellow;
+            animation-delay: .3s;
+        }
+
+        div.box3 {
+            background-color: green;
+            animation-delay: .4s;
+        }
+
+        div.box4 {
+            background-color: blue;
+            animation-delay: .5s;
+        }
+
+        div.box5 {
+            background-color: tomato;
+            animation-delay: .6s;
+        }
+
+        div.box6 {
+            background-color: pink;
+            animation-delay: .7s;
+        }
+
+        div.box7 {
+            background-color: chocolate;
+            animation-delay: .8s;
+        }
+
+        div.box8 {
+            background-color: skyblue;
+            animation-delay: .9s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+    </div>
+
+
+</body>
+
+</html>
