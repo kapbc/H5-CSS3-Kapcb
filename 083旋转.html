@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转</title>
+    <style>
+        html {
+            perspective: 1000px;
+        }
+
+        body {
+            border: 1px solid red;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            background-color: #bfa;
+
+            transition: 2s;
+
+        }
+
+        body:hover .box1 {
+            /* transform: translateZ(300px); */
+
+            transform: rotate(30deg);
+            transform: rotateX(45deg);
+            transform: rotateY(45deg);
+
+            transform: translateX(100px) rotateY(75deg);
+            transform: translateZ(400px) rotateY(1turn);
+        }
+
+        /* 
+            通过旋转可以使元素沿 x y 或 z 轴旋转指定角度
+                rotate()
+                rotateX()
+                rotateY()
+                rotateZ()
+        */
+    </style>
+</head>
+
+<body>
+
+    <div class="box1"></div>
+
+</body>
+
+</html>
