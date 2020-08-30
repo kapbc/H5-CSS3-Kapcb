@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钟表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sec-wrapper {
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            border-radius: 50%;
+            animation: kapcb 60s;
+        }
+
+        .sec {
+            height: 250px;
+            width: 4px;
+            background-color: red;
+            margin: 0 auto;
+            /* margin-top: 50px; */
+            /* animation: kapcb 60s; */
+        }
+
+        @keyframes kapcb {
+            from {
+                transform: rotateZ(0);
+            }
+
+            to {
+                transform: rotateZ(1turn);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sec-wrapper">
+        <div class="sec"></div>
+    </div>
+
+
+</body>
+
+</html>
