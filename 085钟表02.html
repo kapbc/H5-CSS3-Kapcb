@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钟表</title>
+    <style>
+        /* 设置表容器的样式 */
+        .clock {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            /* background-color: #bfa; */
+            margin-top: 100px;
+            border-radius: 50%;
+            border: 10px solid black;
+            position: relative;
+
+            /* animation: kapcb 60s; */
+        }
+
+        .clock>div {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        /* 设置时针 */
+        .hour-wrapper {
+            height: 70%;
+            width: 70%;
+            /* background-color: red; */
+            animation: kapcb 3600*12s linear infinite;
+        }
+
+        .hour {
+            height: 50%;
+            width: 6px;
+            background-color: black;
+            margin: 0 auto;
+        }
+
+        /* 设置分针 */
+        .min-wrapper {
+            width: 80%;
+            height: 80%;
+            /* background-color: brown; */
+            animation: kapcb 3600s steps(60) infinite;
+        }
+
+        .min {
+            height: 50%;
+            width: 4px;
+            background-color: orange;
+            margin: 0 auto;
+        }
+
+        /* 设置秒针 */
+        .second-wrapper {
+            width: 95%;
+            height: 95%;
+            /* background-color: darkblue; */
+            animation: kapcb 60s steps(60) infinite;
+        }
+
+        .second {
+            height: 50%;
+            width: 2px;
+            background-color: skyblue;
+            margin: 0 auto;
+        }
+
+        @keyframes kapcb {
+            from {
+                transform: rotateZ(0);
+            }
+
+            to {
+                transform: rotateZ(1turn);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建表的容器 -->
+    <div class="clock">
+        <!-- 创建时针容器 -->
+        <div class="hour-wrapper">
+            <!-- 时针 -->
+            <div class="hour"></div>
+        </div>
+
+        <!-- 创建分针容器 -->
+        <div class="min-wrapper">
+            <!-- 分针 -->
+            <div class="min"></div>
+        </div>
+
+        <div class="second-wrapper">
+            <div class="second"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
