@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缩放</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 200px auto;
+            transition: 2s;
+
+            /* 
+                transform-origin:  
+                    变形原点
+                        可选值：
+                            center（默认值）    
+                    
+            */
+
+            transform-origin: 0 0;
+        }
+
+        /* 
+            scale(缩放倍数)：缩放
+                scaleX()：x轴缩放
+                scaleY()：y轴缩放
+                scale()：x、y轴双方向缩放
+
+        */
+        .box1:hover {
+            transform: scaleX(2);
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            transition: 2s;
+        }
+
+        .img-wrapper {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .img-wrapper:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+
+    <div class="img-wrapper">
+        <img src="./img/avg006.jpg" alt="">
+    </div>
+
+</body>
+
+</html>
