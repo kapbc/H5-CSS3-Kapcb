@@ -1,0 +1,44 @@
+// less 中的单行注释，注释中的内容不会被解析到CSS中
+
+/* 
+    CSS注释，内容会被解析到CSS文件中
+*/
+body {
+    background-color: #bfa;
+    border: 1px solid red;
+
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        // position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+// 变量，在变量中可以存储一个任意值
+// 并且可以在需要时，任意修改变量的值
+// 变量的语法：@变量名
+
+@a:100px;
+@b:#bfa;
+@c:box3;
+
+.box2{
+    // 使用变量名，如果是直接使用则以 @变量名 的形式使用即可
+    width: @a;
+    height: @a;
+    background-color: orchid;
+}
+
+// 作为类名，或者一部分值使用时必须以 @{变量名} 的形式使用
+.@{c}{
+    width: @a;
+    height: @a;
+    background-color: @b;
+    background-image: url("@{c}/kapcb.jpg");
+}
