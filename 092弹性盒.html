@@ -51,25 +51,33 @@
             line-height: 100px;
             /* 
                 弹性元素的属性：
-                    flex-grow 指定弹性元素的伸缩系数
+                    flex-grow 指定弹性元素的伸展系数
                     - 当父元素有多余的空间时，子元素如何伸展
                     - 父元素的剩余空间，会按照比例进行分配
+
+                    flex-shrink 指定弹性元素的收缩系数
+                    - 当父元素的空间不足以容纳所有子元素时，如果对子元素进行收缩(系数越大，收缩越大)
             */
 
             /* flex-grow: 10; */
+
+            flex-shrink: ;
         }
 
         li:nth-child(1) {
             flex-grow: 1;
+            flex-shrink: 1;
         }
 
         li:nth-child(2) {
             flex-grow: 2;
+            flex-shrink: 2;
             background-color: pink;
         }
 
         li:nth-child(3) {
             flex-grow: 3;
+            flex-shrink: 3;
             background-color: purple;
         }
     </style>
