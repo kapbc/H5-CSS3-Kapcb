@@ -1,0 +1,51 @@
+.box1 .box2 {
+  width: 200px;
+}
+
+.box1>.box3 {
+  color: red;
+}
+
+.box1:hover {
+  color: orange;
+}
+
+div .box1 {
+  background-color: #bfa;
+}
+
+.p1 {
+  width: 200px;
+  height: 200px;
+}
+
+.p2 {
+  background-color: #bfa;
+}
+
+.p3 {
+  width: 200px;
+  height: 200px;
+}
+
+.p5 {
+  width: 200px;
+  height: 200px;
+  background-color: #bfa;
+}
+
+.div {
+  width: 50px;
+  height: 100px;
+  background-color: #bfa;
+}
+
+.div2 {
+  width: 150px;
+  height: 200px;
+  background-color: red;
+}
+
+span {
+  color: #ff8000;
+}
