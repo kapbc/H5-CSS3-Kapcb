@@ -26,3 +26,11 @@ body .box1 {
   background-color: #bfa;
   background-image: url("box3/kapcb.jpg");
 }
+div {
+  width: 400px;
+  height: 200px;
+}
+div {
+  width: 300px;
+  height: 300px;
+}

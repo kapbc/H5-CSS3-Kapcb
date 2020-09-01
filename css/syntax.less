@@ -42,3 +42,22 @@ body {
     background-color: @b;
     background-image: url("@{c}/kapcb.jpg");
 }
+
+
+@d:300px;
+@d:400px;
+
+// 变量发生重名时，会优先使用比较近的变量
+div{
+    width: @d;
+    height: @e;
+}
+
+// 可以在变量声明前就是用变量
+@e:200px;
+
+
+div{
+    width: 300px;
+    height: $width;
+}
