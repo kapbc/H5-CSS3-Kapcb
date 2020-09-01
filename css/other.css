@@ -1,0 +1,41 @@
+/* 
+    CSS注释，内容会被解析到CSS文件中
+*/
+body {
+  background-color: #bfa;
+  border: 1px solid red;
+}
+body .box1 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: orchid;
+}
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: #bfa;
+  background-image: url("box3/kapcb.jpg");
+}
+div {
+  width: 400px;
+  height: 200px;
+}
+div {
+  width: 300px;
+  height: 300px;
+}
+.box1 {
+  width: 200px;
+  height: 100px;
+  background-color: #bfa;
+}
