@@ -7,9 +7,33 @@
     <title>弹性导航条</title>
     <link rel="stylesheet" href="css/reset.css">
     <style>
+        .nav {
+            width: 1210px;
+            /* height: 48px; */
+            line-height: 48px;
+            margin: 50px auto;
+            background-color: #e8e7e3;
+            /* 设置为弹性容器 */
+            display: flex;
+        }
 
-        
+        .nav a {
+            display: block;
+            color: #808080;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+        }
 
+        .nav a:hover {
+            background-color: #636363;
+            color: #fff;
+        }
+
+        .nav li {
+            /* 设置增长系数 */
+            flex-grow: 1;
+        }
     </style>
 </head>
 
