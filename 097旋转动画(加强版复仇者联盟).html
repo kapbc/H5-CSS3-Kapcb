@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy</title>
+    <style>
+        html {
+            perspective: 1500px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .inner {
+            width: 300px;
+            height: 300px;
+            /* margin: 100px auto; */
+            transform-style: preserve-3d;
+            animation: kapcb 45s linear infinite;
+            position: absolute;
+            left: 800px;
+            top: 250px;
+        }
+
+        .inner>li {
+            position: absolute;
+            /* opacity: .6; */
+        }
+
+        .inner li img {
+            width: 300px;
+            height: 300px;
+            /* position: absolute; */
+            vertical-align: top;
+        }
+
+        .outer {
+            width: 600px;
+            height: 600px;
+            /* margin: 200px auto; */
+            position: absolute;
+            left: 600px;
+            top: 100px;
+            transform-style: preserve-3d;
+            animation: ccc 30s linear infinite;
+        }
+
+        .outer li {
+            position: absolute;
+            opacity: .5;
+        }
+
+        .outer img {
+            width: 600px;
+            height: 600px;
+            vertical-align: top;
+        }
+
+        .inner-li-1 {
+            transform: rotateY(90deg) translateZ(150px);
+        }
+
+        .inner-li-2 {
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+
+        .inner-li-3 {
+            transform: rotateX(90deg) translateZ(150px);
+        }
+
+        .inner-li-4 {
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+
+        .inner-li-5 {
+            transform: translateZ(150px);
+        }
+
+        .inner-li-6 {
+            transform: rotateY(.5turn) translateZ(150px);
+        }
+
+        .outer-li-1 {
+            transform: rotateX(90deg) translateZ(500px);
+        }
+
+        .outer-li-2 {
+            transform: rotateX(-90deg) translateZ(500px);
+        }
+
+        .outer-li-3 {
+            transform: rotateY(90deg) translateZ(400px);
+        }
+
+        .outer-li-4 {
+            transform: rotateY(-90deg) translateZ(400px);
+        }
+
+        .outer-li-5 {
+            transform: translateZ(400px);
+        }
+
+        .outer-li-6 {
+            transform: rotateY(180deg) translateZ(400px);
+        }
+
+        @keyframes kapcb {
+            from {
+                transform: rotateX(0) rotateZ(0);
+            }
+
+            to {
+                transform: rotateX(1turn) rotateZ(360deg);
+            }
+        }
+
+        @keyframes ccc {
+            from {
+                transform: rotateY(0) rotateZ(0);
+            }
+
+            to {
+                transform: rotateY(1turn) rotateZ(1turn);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+        <li class="inner-li-1"><img src="./img/1.jpg" alt="ccaizx"></li>
+        <li class="inner-li-2"><img src="./img/2.jpg" alt="ccaizx"></li>
+        <li class="inner-li-3"><img src="./img/3.jpg" alt="ccaizx"></li>
+        <li class="inner-li-4"><img src="./img/4.jpg" alt="ccaizx"></li>
+        <li class="inner-li-5"><img src="./img/5.jpg" alt="ccaizx"></li>
+        <li class="inner-li-6"><img src="./img/6.jpg" alt="ccaizx"></li>
+    </div>
+
+    <div class="outer">
+        <li class="outer-li-1"><img src="./img/7.jpg" alt="ccaizx"></li>
+        <li class="outer-li-2"><img src="./img/8.jpg" alt="ccaizx"></li>
+        <li class="outer-li-3"><img src="./img/9.jpg" alt="ccaizx"></li>
+        <li class="outer-li-4"><img src="./img/10.jpg" alt="ccaizx"></li>
+        <li class="outer-li-5"><img src="./img/11.jpg" alt="ccaizx"></li>
+        <li class="outer-li-6"><img src="./img/12.jpg" alt="ccaizx"></li>
+    </div>
+</body>
+
+</html>
