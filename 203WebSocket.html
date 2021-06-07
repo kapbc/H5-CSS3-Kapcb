@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>websocket通讯</title>
+</head>
+<style>
+    .websocket-test-box {
+        position: absolute;
+        width: 1000px;
+        height: 500px;
+        background-color: #bfa;
+        top: 50px;
+        left: 150px;
+    }
+
+    .choose-send-info-box{
+        position: relative;
+        width: 300px;
+        left: 450px;
+    }
+
+    .message-box {
+        position: relative;
+        top:15px;
+        /*left: 20px;*/
+        width: 600px;
+        height: 300px;
+        background-color: red;
+        /*margin-left: 100px;*/
+        /*margin-top: 50px;*/
+    }
+</style>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    var socket;
+
+    function openSocket() {
+        if (typeof (WebSocket) == "undefined") {
+            console.log("您的浏览器不支持WebSocket");
+        } else {
+            console.log("您的浏览器支持WebSocket");
+            //实现化WebSocket对象，指定要连接的服务器地址与端口  建立连接
+            //var socketUrl="${request.contextPath}/im/"+$("#userId").val();
+
+            //等同于socket = new WebSocket("ws://localhost:8888/xxxx/im/25");
+            // var socketUrl="http://localhost:9998/websocket/imserver/"+$("#userId").val();
+            // var socketUrl= 'http://' + window.location.host + '/imserver/'+$("#userId").val();
+            var socketUrl = 'http://127.0.0.1:9097/imserver/' + $("#userId").val();
+            socketUrl = socketUrl.replace("https", "ws").replace("http", "ws");
+            console.log(socketUrl);
+            if (socket != null) {
+                socket.close();
+                socket = null;
+            }
+            socket = new WebSocket(socketUrl);
+            //打开事件
+            socket.onopen = function () {
+                console.log("websocket已打开");
+                //socket.send("这是来自客户端的消息" + location.href + new Date());
+            };
+            //获得消息事件
+            socket.onmessage = function (msg) {
+                console.log(msg.data);
+                alert(msg.data);
+                //发现消息进入    开始处理前端触发逻辑
+            };
+            //关闭事件
+            socket.onclose = function () {
+                console.log("websocket已关闭");
+            };
+            //发生了错误事件
+            socket.onerror = function () {
+                console.log("websocket发生了错误");
+            }
+        }
+    }
+
+    function sendMessage() {
+        if (typeof (WebSocket) == "undefined") {
+            console.log("您的浏览器不支持WebSocket");
+        } else {
+            console.log("您的浏览器支持WebSocket");
+            console.log('{"toUserId":"' + $("#toUserId").val() + '","contentText":"' + $("#contentText").val() + '"}');
+            socket.send('{"toUserId":"' + $("#toUserId").val() + '","contentText":"' + $("#contentText").val() + '"}');
+        }
+    }
+</script>
+<body>
+
+<div class="websocket-test-box">
+    <div class="choose-send-info-box">
+        <div>
+            <label>Your UseId:</label>
+            <input id="userId" name="userId" type="text" value="10" placeholder="Ple Choose Your UserId!">
+        </div>
+        <div>
+            <label>Send To UseId:</label>
+            <input id="toUserId" name="toUserId" type="text" value="20"
+                   placeholder="Ple Choose UseId You Want Send To!">
+        </div>
+    </div>
+    <div class="message-box">
+
+    </div>
+    <div class="message-content-box">
+        <input id="contentText" name="contentText" type="text" value="Hello Mike"/>
+    </div>
+    <div class="message-operation-box">
+        <button onclick="">send message</button>
+        <button onclick="">reset message</button>
+    </div>
+</div>
+
+
+<!--<p>【userId】：-->
+<!--<div><input id="userId" name="userId" type="text" value="10"></div>-->
+<!--<p>【toUserId】：-->
+<!--<div><input id="toUserId" name="toUserId" type="text" value="20"></div>-->
+<!--<p>【toUserId】：-->
+<!--<div><input id="contentText" name="contentText" type="text" value="hello websocket"></div>-->
+<!--<p>【操作】：-->
+<!--<div><a onclick="openSocket()">开启socket</a></div>-->
+<!--<p>【操作】：-->
+<!--<div><a onclick="sendMessage()">发送消息</a></div>-->
+</body>
+
+</html>
